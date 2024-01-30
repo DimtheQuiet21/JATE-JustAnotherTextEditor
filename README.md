@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Credits
-The source code for this application, namely the client-server folders along with the code-mirror setup and execution were all done by the EDX-Bootcamp out of the Extended University of Wisconsin Campus! It was great getting to see this in action! Also, WebpackHTML documentation alongside WebpackPWAManifest documentation were absolutely vital for this project.
+The source code for this application, namely the client-server folders along with the code-mirror setup and static element execution were all done by the EDX-Bootcamp out of the Extended University of Wisconsin Campus! It was great getting to see this in action! Also, WebpackHTML documentation alongside WebpackPWAManifest documentation were absolutely vital for this project.
 
 ## Table of Contents
 
