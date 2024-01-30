@@ -2,6 +2,7 @@ import { Workbox } from 'workbox-window';
 import Editor from './editor';
 import './database';
 import '../css/style.css';
+import {loadIcons} from './logo'
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
@@ -22,6 +23,8 @@ const editor = new Editor();
 if (typeof editor === 'undefined') {
   loadSpinner();
 }
+
+loadIcons()
 
 // Check if service workers are supported
 if ('serviceWorker' in navigator) {
