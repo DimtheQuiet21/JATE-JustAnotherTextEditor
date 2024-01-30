@@ -21,7 +21,8 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'TODOs List'
+        title: 'JATE',
+        //favicon: 'src/images/logo.png',
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
@@ -39,7 +40,8 @@ module.exports = () => {
           {
             src: path.resolve('./src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512, 1024], // multiple sizes
-            purpose: 'any maskable'
+            purpose: 'any maskable',
+            //destination: path.join('icons')
           },
         ]
       }),
@@ -50,6 +52,19 @@ module.exports = () => {
         {
           test: /\.css$/i,
           use: ['style-loader', 'css-loader'],
+        },
+        {
+          test: /\.(png|svg|jpg|jpeg|gif)$/i,
+          type: 'asset/resource',
+          // use: [
+          //   {
+          //     loader: 'file-loader',
+          //     options: {
+          //       name: '[name].[contenthash].[ext]',
+          //       outputPath: 'icons',
+          //     },
+          //   },
+          // ],
         },
         {
           test: /\.m?js$/,

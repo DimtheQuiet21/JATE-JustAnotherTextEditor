@@ -62,9 +62,3 @@ registerRoute(
     ],
   })
 );
-
-// const getLogoPath = () => {
-//   const precachedEntries = self.__WB_MANIFEST || [];
-//   const logoEntry = precachedEntries.find(entry => entry.url.includes('/src/images/logo.png'));
-//   return logoEntry ? logoEntry.url : '';
-// };
